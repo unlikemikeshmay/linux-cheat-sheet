@@ -1,0 +1,48 @@
+CHANGING PERMISSIONS
+chmod -R <permissionsettings> <dirname>
+sudo chmod -R 755
+
+EXTRACT TAR
+ tar -zxvf yourfile.tar.gz (current directory)
+ tar -xf file.name.tar -C /path/to/directory (different directory)or
+ this does the same thing
+ tar xf file.tar --directory /path/to/directory
+
+EXTRACt ZIP
+ unzip file.zip
+ (suggested: cp file.zip /to/perm/file/directory && cd /to/perm/file/directory && unzip file.zip)
+
+LOCATING AND KILLING PROCESSES
+command: top
+shows a table of useful information for finding a process including command name for process
+
+(i think ps stands for process)
+command: ps aux
+arguments:
+a: show processes for all users
+u: display the user who is using the process
+x: show all processes
+
+|grep -i <nameofprocesswanted>: return the processes with <nameofprocesswanted>
+
+(process id of)
+command: pidof <commandname>: returns the process id of whatever command you enter as an argument
+
+command:pgrep: returns hits on whatever you enter if you arent quite sure of the name
+
+KILL COMMANDS
+command: killall <exactname> kills process with that name
+
+command: killall -9 <exactname> force kills with SIGKILL
+
+command: pkill <name>: allows you to kill process if you only know part of a processes name
+
+command: pkill -9 force kills process you only know part of process name
+
+command: kill <id> kill the process that the id belongs to
+
+command: kill -9 force kills the process that the id belongs to
+
+RENAMING FILES
+the best way to rename a file is to move it
+command: mv /dir/dir/filetoberenamed  /newdir/orsamedir/newfilenam
