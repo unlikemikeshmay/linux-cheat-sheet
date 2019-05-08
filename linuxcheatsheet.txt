@@ -2,6 +2,9 @@ CHANGING PERMISSIONS
 chmod -R <permissionsettings> <dirname>
 sudo chmod -R 755
 
+INSTALL .deb FILES
+You can install it using sudo dpkg -i /path/to/deb/file followed by sudo apt-get install -f .
+
 EXTRACT TAR
  tar -zxvf yourfile.tar.gz (current directory)
  tar -xf file.name.tar -C /path/to/directory (different directory)or
